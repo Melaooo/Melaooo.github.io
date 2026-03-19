@@ -61,7 +61,7 @@ border: 1px solid black;
 
 
 th {
-  border: 1px solid black;
+border: 1px solid black;
   font-family: "papyrus";
   background-color: lightgray;
   font-size: 20px;
@@ -94,4 +94,41 @@ td {
     font-family: "papyrus"; 
         font-size: 20px;
         font-weight: bolder;
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media (max-width: 768px) {
+
+  /* PERFIL pasa a vertical */
+  .perfil {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+  }
+
+  .summary p{
+    width: 90%;
+  }
+  .summary h4 {
+    margin-top : 30px;
+    margin-left:0px;
+  }
+
+
+  /* DATOS pasa a vertical */
+  .datos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hobbies, .tabla {
+    width: 100%;
+    max-width: 400px;
+  }
+
+
+  .foto img {
+    max-width: 300px;
+  }
 }
