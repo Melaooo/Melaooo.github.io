@@ -1,66 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página Personal</title>
     <link rel="stylesheet" href="Lab_1.css">
 </head>
+
 <body>
-   <div>
-      <p>Nombre: Tomás Raimundo Melin Pérez</p>
-      <p>Edad: 25 años</p>
-      <p>Carrera: Ingeniería Civil en Ciencias en Computación</p>
-      <p>Año de entrada: 2022</p>
-      <p><a href="https://github.com/Melaooo/Melaooo.github.io" target="_blank">Ir a la pagina de Github</a></p>
-      <p>Un pequeño resumen mio: ...</p>
-   </div>
+    <h1 class="titulo">Bienvenidos a mi página personal</h1>
+    <div class="perfil">
+        <div class="info">
+            <h4>Sobre mi:</h4>
+            <p>Nombre: Tomás Raimundo Melin Pérez<br>
+            Edad: 25 años<br>
+            Carrera: Ingeniería Civil en Ciencias en Computación<br>
+            Año de entrada: 2022<br></p>
+            <a href="https://github.com/Melaooo/Melaooo.github.io" target="_blank">Ir a la pagina de Github</a>
+        </div>
 
-   <div class = "hobbies">
-        <h3>Hobbies</h3>
-        <ul>
-            <li>Programar</li>
-            <li>Jugar videojuegos</li>
-            <li>Leer libros de ciencia ficción</li>
-            <li>Hacer ejercicio</li>
-        </ul>
-   </div>
+        <div class="foto">
+            <img src="foto.jpg">
+        </div>
 
-   <div>
-        <table border="1" class= "tabla">
-            <tr>
-                <th>Aptitud</th>
-                <th>Nivel</th>
-            </tr>
-            <tr>
-                <td>Python</td>
-                <td>Avanzado</td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td>Intermedio</td>
-            </tr>
-            <tr>
-                <td>HTML/CSS</td>
-                <td>Básico</td>
-            </tr>
-            <tr>
-                <td>SQL</td>
-                <td>Básico</td>
-            </tr>
-            <tr>
-                <td>Trabajo en equipo</td>
-                <td>Intermedio</td>
-            </tr>
-            <tr>
-                <td>Excel</td>
-                <td>None</td>
-            </tr>
-            <tr>
-                <td>Comunicación</td>
-                <td>Intermedio</td>
-            </tr>
-        </table>
-   </div>
+        <div class="summary">
+            <h4>Resumen:</h4>
+            <p>Soy un estudiante de Ingeniería Civil en Ciencias en Computación con una gran pasión por el fútbol, el cine, los videojuegos y la literatura. Gran parte del tiempo lo dedico a una de estas actividades y el resto a programar y estudiar para la universidad.</p>
+            <a href="https://www.youtube.com/watch?v=iik25wqIuFo" target="_blank">Video importante</a>
+        </div>
+    </div>
+
+
+    <div class="datos">
+
+        
+        <div>
+            <table>
+                <tr>
+                    <th>Aptitud</th>
+                    <th>Nivel</th>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Avanzado</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Intermedio</td>
+                </tr>
+                <tr>
+                    <td>HTML/CSS</td>
+                    <td>Básico</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td>Básico</td>
+                </tr>
+                <tr>
+                    <td>Trabajo en equipo</td>
+                    <td>Intermedio</td>
+                </tr>
+                <tr>
+                    <td>Excel</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>Comunicación</td>
+                    <td>Intermedio</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class = "hobbies">
+            <h3>Hobbies</h3>
+            <ul>
+                <li>Jugar videojuegos</li>
+                <li>Leer libros de ficción</li>
+                <li>Jugar mucho fútbol</li>
+                <li>Ver películas y series</li>
+                <li>Escuchar música</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="mensaje">
+        <p id="msj">Deja tu mensaje aqui!</p>
+        <p id="demo"></p>
+        <p class="mensaje"></p>
+
+        <input type="text" id="texto">
+        <button onclick="cambiar()">Mostrar mensaje</button>
+
+    </div>
+
+    <script>
+    function cambiar() {
+    document.getElementById("demo").innerText =
+        document.getElementById("texto").value;
+    }
+    </script>
+    
 </body>
 </html>
