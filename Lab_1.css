@@ -2,4 +2,23 @@ table {
     color: red;
     border-collapse: collapse;
     width: 20%;
+    text-align: center;
+    background-color: lightblue;
+}
+th{
+    font-family: 'papyrus';
+    background-color: lightgray;
+}
+
+p{
+    font: 20px Arial;
+}
+
+hobbies{
+    font: 20px Arial;
+    text-align: right;
+}
+
+body{
+    background-color: lightyellow;
 }
